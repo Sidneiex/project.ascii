@@ -1,0 +1,53 @@
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "Build ASCII Art Generator",
+//             "type": "shell",
+//             "command": "g++",
+//             "args": [
+//                 "-std=c++17",
+//                 "-Wall",
+//                 "-I/opt/homebrew/include",
+//                 "-I/opt/homebrew/include/opencv4",
+//                 "-I/opt/homebrew/opt/ncurses/include",
+//                 "-I/opt/homebrew/include/ImageMagick-7",
+//                 "${workspaceFolder}/src/*.cpp",
+//                 "-o",
+//                 "${workspaceFolder}/ascii_art_generator",
+//                 "-L/opt/homebrew/lib",
+//                 "-L/opt/homebrew/opt/ncurses/lib",
+//                 "-lopencv_core",
+//                 "-lopencv_imgcodecs",
+//                 "-lopencv_imgproc",
+//                 "-lMagick++-7.Q16HDRI",
+//                 "-lncurses"
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             }
+//         }
+//     ]
+// }
+
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build ASCII Converter",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

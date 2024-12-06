@@ -1,0 +1,19 @@
+// {
+//     "files.associations": {
+//         "iostream": "cpp",
+//         "string": "cpp",
+//         "filesystem": "cpp"
+//     }
+// }
+
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "string": "cpp",
+        "filesystem": "cpp"
+    },
+    "[makefile]": {
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false
+    }
+}
